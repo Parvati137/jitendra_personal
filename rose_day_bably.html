@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Rose Day, Bably </title>
+  <style>
+    body {
+      background: url('./img/three.gif') center center/cover no-repeat fixed;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: rgba(255,255,255,0.85);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      padding: 22px 24px;
+      text-align: center;
+      max-width: 600px;
+    }
+    .bably-photo {
+      width: 420px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(255,0,100,0.15);
+      margin-bottom: 14px;
+    }
+    h1 {
+      color: #d7263d;
+      margin-bottom: 8px;
+      font-size: 1.6rem;
+      margin-top: 0px;
+    }
+    .rose-animation {
+      margin: 4px auto 16px auto;
+      width: 440px;
+      height: 200px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rose-img {
+      width: 440px;
+      height: 200px;
+      object-fit: contain;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bloom 2s ease-in-out infinite alternate;
+    }
+    @keyframes bloom {
+      0% { transform: translateX(-50%) scale(0.95); }
+      100% { transform: translateX(-50%) scale(1.08); }
+    }
+    .message {
+      color: #333;
+      font-size: 1.2em;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+    .signature {
+      color: #d7263d;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 16px;
+    }
+    @media (max-width: 600px) {
+  .container {
+    padding: 4vw 2vw;
+    max-width: 99vw;
+  }
+  .bably-photo, .rose-img, .rose-animation {
+    max-width: 98vw;
+    /* width: 98vw; */
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  .message, .signature {
+    font-size: 1em;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="bably-photo" src="./personal.jpeg" alt="Bably's Photo">
+    <h1>Happy Rose Day, Bably <span style="font-size:1.2em">💖</span></h1>
+    <div class="rose-animation">
+      <img class="rose-img" src="./img/two.gif" alt="Rose">
+    </div>
+    <div class="message">
+      Roses are red, my love for you is true.<br>
+      Every day with you feels like a celebration.<br>
+      Happy Rose Day, my future wiffey🩷
+    </div>
+    <div class="signature">— With all my love, your Jitendra <span style="font-size:1.2em">🥰</span></div>
+  </div>
+</body>
+</html>
